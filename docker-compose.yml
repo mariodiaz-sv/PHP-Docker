@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: php-docker
+    container_name: php_docker
+    restart: always
+    ports:
+      - 8010:8000
